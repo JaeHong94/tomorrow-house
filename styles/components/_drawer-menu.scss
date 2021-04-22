@@ -16,6 +16,18 @@
   }
 
   &.is-open {
+    .drawer-menu-button .ic-chevron {
+      transform: translateY(-50%) rotate(180deg);
+    }
+
+    .drawer-menu-content {
+      max-height: 500px;
+    }
+
+    .drawer-menu-list {
+      padding-bottom: $drawer-menu-list-padding;
+    }
+
     &.is-community {
       .drawer-menu-content {
         max-height: _calculate-max-content-height($community-length);
@@ -32,20 +44,6 @@
       .drawer-menu-content {
         max-height: _calculate-max-content-height($expert-length);
       }
-    }
-  }
-
-  &.is-open {
-    .drawer-menu-button .ic-chevron {
-      transform: translateY(-50%) rotate(180deg);
-    }
-
-    .drawer-menu-content {
-      max-height: 500px;
-    }
-
-    .drawer-menu-list {
-      padding-bottom: $drawer-menu-list-padding;
     }
   }
 
